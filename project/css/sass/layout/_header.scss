@@ -1,0 +1,243 @@
+.header{
+    .top-navbar{
+        border-bottom: $borderSolidEEE;
+        padding: 6px 50px;
+        font-family: $fontWork;
+        .adress-top-navbar{
+            display: flex;
+            align-items: center;
+            float: left;
+            font-size: $font-size + 2;
+            i{
+                font-size: $font-size + 6;
+                color: $defaultColor;
+                margin-right: $margin - 3;
+            }
+            .locations-one{
+                margin-right: $margin + 20;
+            }
+        }
+        .social-top-navbar{
+            float: right;
+            i{
+                margin-right: $margin + 10;
+                font-size: $font-size + 2;
+                color: $flatab;
+                cursor: pointer;
+                &:hover{
+                    color: $defaultColor;
+                }
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .navbar{
+        background-color: rgba(255, 255, 255, .5) !important;
+        font-family: $fontWork;
+        padding: 20px 55px;
+        @media (max-width: 767px) {
+            padding: 10px 0;
+        }
+        &.navbar-fixed{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99999;
+            padding: 5px 50px;
+            background-color: rgba(255, 255, 255, .8) !important;
+            border: 2px solid #EEE;
+            @media (max-width: 767px) {
+                padding: 5px 0;
+            }
+            .navbar-brand{
+                width: 10%;
+                @media (max-width: 767px) {
+                    width: 60%;
+                }
+            }
+        }
+        .navbar-brand{
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            @media (max-width: 767px) {
+                width: 60%;
+            }
+        }
+        .navbar-toggler{
+            @media (max-width: 767px) {
+                outline: none;
+            }
+            span{
+                @media (max-width: 767px) {
+                    width: 1em;
+                    height: 1em;
+                }
+            }
+        }
+        .navbar-collapse{
+            @media (max-width: 767px) {
+                text-align: center;
+            }
+            .navbar-nav{
+                .nav-item{
+                    margin-right: $margin + 10;
+                    &:last-of-type{
+                        margin-right: 0;
+                        line-height: 30px;
+                        cursor: pointer;
+                        a{
+                            color: $flat444;
+                        }
+                        .dropdown-menu{
+                            top: 70px;
+                            padding: 25px 20px;
+                            margin: 0;
+                            .form-dropdown{
+                                display: flex;
+                                position: relative;
+                                input{
+                                    outline: none;
+                                    height: 35px;
+                                    border-radius: 0;
+                                    &:first-child{
+                                        border: 1px solid $flatEEE;
+                                    }
+                                    &:last-child{
+                                        padding: 5px 30px;
+                                        background-color: #000;
+                                        color: $flatFFF;
+                                        border: 1px solid #000;
+                                        line-height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .nav-link{
+                        color: $flat444;
+                        transition: $defaultTrans;
+                        font-size: $font-size + 4;
+                        &.active{
+                            color: $defaultColor;
+                        }
+                        &:hover{
+                            color: $defaultColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.intro{
+    background-image: url('../images/intro-img.jpg');
+    background-size: cover;
+    position: relative;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+    .overlay{
+        @extend %overlay;
+        background-image: $linear1;
+    }
+    .intro-info-container{
+        display: flex;
+        align-items: center;
+        .intro-info-parent{
+            color: $flatFFF;
+            @media (max-width: 767px) {
+                margin: auto;
+            }
+            .intro-info{
+                @media (min-width: 768px) and (max-width: 1200px) {
+                    padding-top: $padding + 20;
+                }
+                @media (max-width: 767px) {
+                    padding-top: $padding + 10;
+                    padding-bottom: $padding + 10;
+                }
+                .intro-info-span{
+                    font-size: $font-size + 20;
+                    font-weight: lighter;
+                    margin-bottom: $margin + 15;
+                    display: block;
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        font-size: $font-size + 15;
+                        margin-bottom: $margin;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: $font-size + 6;
+                        margin-bottom: 10px;
+                    }
+                }
+                h1{
+                    font-weight: bold;
+                    font-size: $font-size + 35;
+                    margin-bottom: $margin + 10;
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        font-size: $font-size + 15;
+                        margin-bottom: $margin;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: $font-size + 8;
+                        margin-bottom: 10px;
+                    }
+                }
+                p{
+                    color: $flatFFF;
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        font-size: $font-size + 3;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: $font-size + 1;
+                    }
+                }
+                button{
+                    background-color: transparent;
+                    border: 1px solid $flatFFF;
+                    color: $flatFFF;
+                    margin: $margin;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    margin-top: $margin + 15;
+                    font-size: $font-size + 3;
+                    transition: $defaultTrans;
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                        margin-top: $margin;
+                    }
+                    @media (max-width: 768px) {
+                        margin: 0 0 10px;
+                    }
+                    &:first-of-type{
+                        margin-left: 0;
+                        padding-right: 25px;
+                        padding-left: 25px;
+                        background-color: $flatFFF;
+                        color: $defaultColor;
+                        a{
+                            text-decoration: none;
+                            color: $defaultColor;
+                        }
+                        &:hover{
+                            background-color: transparent;
+                            color: $flatFFF;
+                            a{
+                                color: $flatFFF;
+                            }
+                        }
+                    }
+                    &:last-of-type{
+                        &:hover{
+                            background-color: $flatFFF;
+                            color: $defaultColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

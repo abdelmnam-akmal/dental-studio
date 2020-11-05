@@ -1,0 +1,75 @@
+.services{
+    padding-top: $padding + 10;
+    h2{
+        font-weight: bold;
+        font-size: $font-size + 35;
+        margin-bottom: $margin + 5;
+        color: $flat444;
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+    p{
+        color: $defaultColor;
+        margin-bottom: $margin + 40;
+        @media (max-width: 767px) {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    }
+    .services-info-parent{
+        margin-bottom: $margin + 20;
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+        .services-info{
+            background-color: #F7F7F7;
+            padding: 80px 55px;
+            @media (max-width: 767px) {
+                padding: 10px 5px;
+            }
+            i{
+                font-size: $font-size + 40;
+                color: $defaultColor;
+                margin-bottom: $margin + 15;
+                @media (max-width: 767px) {
+                    margin-bottom: 10px;
+                    font-size: 30px;
+                }
+            }
+            h5{
+                font-size: $font-size + 4;
+                font-weight: 600;
+                letter-spacing: -1px;
+                color: $flat444;
+                margin-bottom: $margin + 5;
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+            p{
+                font-size: $font-size + 3;
+                color: $flatab;
+                margin-bottom: 0;
+                @media (max-width: 767px) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    button{
+        border: 1px solid $flatab;
+        color: $flatab;
+        margin-top: $margin + 20;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        @media (max-width: 767px) {
+            margin-top: 10px;
+            font-size: 10px;
+            padding: 10px 10px;
+        }
+    }
+}

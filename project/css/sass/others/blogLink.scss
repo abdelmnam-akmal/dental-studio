@@ -1,0 +1,94 @@
+.main-div{
+    padding: 25px 0 25px 100px;
+    background-color: #FCFCFC;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+        padding: 10px 0;
+    }
+    nav{
+        background-color: transparent;
+        ol{
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            li{
+                color: #C7C3C3 !important;
+                font-size: 12px;
+                &.active{
+                    color: #C7C3C3 !important;
+                    padding-left: 2px;
+                }
+                a{
+                    color: #C7C3C3;
+                    &:hover{
+                        text-decoration: none;
+                        color: $defaultColor;
+                    }
+                }
+            }
+        }
+    }
+    .blog-info-parent{
+        display: flex;
+        align-items: center;
+        h4{
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+    }
+}
+.blog-content{
+    margin-left: 100px;
+    margin-right: 100px;
+    @media (max-width: 767px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card-parent{
+        margin-bottom: 30px;
+        .card-content{
+            width: 100%;
+            .card{
+                width: 90%;
+                border: none;
+                .card-body{
+                    padding-left: 0;
+                    @media (max-width: 767px) {
+                        padding: 10px 0 0;
+                    }
+                    .card-title{
+                        font-size: 20px;
+                        color: #000;
+                        margin-bottom: 0;
+                        @media (max-width: 767px) {
+                            font-size: 16px;
+                        }
+                        a{
+                            color: #000;
+                            text-decoration :none;
+                            &:hover{
+                                color: #1db4c1;
+                            }
+                        }
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #CCC;
+                        a{
+                            color: #000;
+                        }
+                    }
+                    .card-text{
+                        font-size: 14px;
+                        color: #444;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.main-header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .main-intro-gallary{
+        h1{
+            font-size: 50px;
+            font-weight: bold;
+            @media (max-width: 767px) {
+                font-size: 25px;
+            }
+        }
+        span{
+            color: #1db4c1;
+        }
+    }
+}
+.content-gallary{
+    padding-top: 0;
+}

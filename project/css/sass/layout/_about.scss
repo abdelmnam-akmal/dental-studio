@@ -1,0 +1,91 @@
+.about{
+    padding: 70px 40px;
+    border-bottom: $borderSolidEEE;
+    box-shadow: $default-box-shadow;
+    @media (max-width: 1200px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .about-info-parent{
+        @media (max-width: 767px) {
+            margin-bottom: $margin + 15;
+        }
+        &:last-of-type{
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+            }
+        }
+        .about-info{
+            background-color: $flatFFF;
+            padding: 0 20px;
+            @media (max-width: 767px) {
+                padding: 0;
+            }
+            i{
+                font-size: $font-size + 35;
+                margin-bottom: 20px;
+                color: $defaultColor;
+            }
+            h3{
+                font-size: 22px;
+                color: $flat444;
+                margin-bottom: $margin;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+            p{
+                font-size: $font-size + 3;
+                @media (max-width: 767px) {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+.about-down{
+    margin-top: $margin + 90;
+    margin-bottom: $margin + 90;
+    @media (max-width: 767px) {
+        margin: 50px 0;
+        text-align: center;
+    }
+    .about-text-parent{
+        display: flex;
+        align-items: center;
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+        .about-text{
+            h2{
+                font-size: $font-size + 17;
+                font-weight: 300;
+                margin-bottom: $margin + 15;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                }
+            }
+            p{
+                font-size: $font-size + 3;
+                @media (max-width: 767px) {
+                    font-size: 10px;
+                }
+            }
+            button{
+                margin-top: $margin + 10;
+                @media (max-width: 767px) {
+                    margin-top: 5px;
+                    padding: 10px 20px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .about-img-parent{
+        padding-right: 0;
+        overflow: hidden;
+        @media (max-width: 767px) {
+            padding-right: 15px;
+        }
+    }
+}

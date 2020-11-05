@@ -1,0 +1,24 @@
+$fontOpen: 'Open Sans', sans-serif;
+$fontWork: 'Work Sans', sans-serif;
+$fontRoboto: 'Roboto', sans-serif;
+
+$flatEEE: #EEE;
+$flatab: #ababab;
+$defaultColor: #1db4c1;
+$flat444: #444;
+$flatColor1: #4CEDD9;
+$flatColor2: #3397D4;
+$flatFFF: #FFF;
+
+$borderSolidEEE: 1px solid #EEE;
+
+$default-box-shadow: 0 4px 15px 4px $flatEEE;
+
+$font-size: 10px;
+$margin: 10px;
+$padding: 10px;
+
+$defaultTrans: .3s;
+
+$linear1: linear-gradient(to right, $flatColor1, $flatColor2);
+$linear2: linear-gradient(to right, $flatColor2, $flatColor1);

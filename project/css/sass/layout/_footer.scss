@@ -1,0 +1,91 @@
+.footer{
+    padding: 50px 10px;
+    background-color: #444F5D;
+    @media (max-width: 767px) {
+        padding: 20px 0;
+    }
+    .footer-parent{
+        padding: 0 30px;
+        @media (max-width: 767px) {
+            padding: 0 10px;
+            margin-bottom: 30px;
+        }
+        &:last-child{
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+            }
+        }
+        .footer-info{
+            h4{
+                color: $flatFFF;
+                margin-bottom: $margin + 30;
+                font-size: $font-size + 8;
+                font-weight: 200;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+                &:after{
+                    content: '';
+                    border-bottom: 1px solid $defaultColor;;
+                    display: block;
+                    width: 20%;
+                    margin-top: $margin + 5;
+                    @media (max-width: 767px) {
+                        width: 15%;
+                    }
+                }
+            }
+            ul{
+                margin: 0;
+                li{
+                    margin-bottom: $margin;
+                    border-bottom: 1px solid #69727d;
+                    color: #b4b9be;
+                    font-size: $font-size + 4;
+                    padding-bottom: $padding;
+                    transition: $defaultTrans;
+                    @media (max-width: 767px) {
+                        font-size: 12px;
+                    }
+                    &:hover{
+                        color: $flatFFF;
+                    }
+                    &:last-of-type{
+                        border: none;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: #353D4C;
+    padding: $padding + 10;
+    color: #b4b9be;
+    font-size: $font-size + 4;
+    @media (max-width: 767px) {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    span{
+        display: inline-block;
+        border-right: 1px solid #69727d;
+        padding-right: $padding;
+        margin-right: $margin;
+        @media (max-width: 767px) {
+            padding-right: 5px;
+            margin-right: 0;
+        }
+    }
+    abbr{
+        display: inline-block;
+        margin-left: $margin;
+        text-decoration: none !important;
+        color: $defaultColor;
+        @media (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+}

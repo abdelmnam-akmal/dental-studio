@@ -1,0 +1,183 @@
+.navbar-contact{
+    box-shadow: $default-box-shadow;
+}
+.contact{
+    padding-top: $padding + 70;
+    padding-bottom: $padding + 70;
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contact-parent{
+        .contact-header{
+            width: 100%;
+            h1{
+                font-size: $font-size + 35;
+                font-weight: bold;
+                @media (max-width: 767px) {
+                    font-size: 25px;
+                    overflow-y: auto;
+                }
+            }
+            span{
+                color: $defaultColor;
+            }
+        }
+    }
+}
+.contact-us{
+    margin-bottom: $margin + 30;
+    .contact-us-parent{
+        padding: 0;
+        height: 600px;
+        @media (max-width: 767px) {
+            height: 400px;
+        }
+        iframe{
+            width: 100%;
+            border: none;
+            height: 100%;
+        }
+    }
+}
+.contact-form{
+    padding: 30px 60px 60px;
+    @media (max-width: 767px) {
+        padding: 30px 0 60px;
+    }
+    .contact-form-parent{
+        .contact-form-content{
+            form{
+                div{
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: $margin + 20;
+                    position: relative;
+                    @media (max-width: 767px) {
+                        margin-bottom: 15px;
+                    }
+                    label{
+                        font-weight: lighter;
+                        font-size: $font-size + 5;
+                        color: $flatab;
+                    }
+                    i{
+                        display: inline-block;
+                        font-size: 5px;
+                        position: relative;
+                        top: -3px;
+                        left: 5px;
+                        color: rgba(255, 38, 38, 0.89);
+                    }
+                    input,
+                    textarea{
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 0;
+                        border: none;
+                        outline: none;
+                        box-shadow: 0px 7px 17px 4px #EEE;
+                        color: $flatab
+                    }
+                    span{
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $defaultColor;
+                        &.textarea-span{
+                            bottom: 4px;
+                        }
+                    }
+                    &:first-of-type{
+                        width: 46%;
+                        margin-right: 3%;
+                        @media (max-width: 1199px) {
+                            width: 100%;
+                            margin-right: 0;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        width: 47%;
+                        margin-left: 3%;
+                        @media (max-width: 1199px) {
+                            width: 100%;
+                            margin-left: 0;
+                        }
+                    }
+                    &:last-of-type{
+                        margin-bottom: 0;
+                        input{
+                            background-color: $defaultColor;
+                            border: none;
+                            box-shadow: none;
+                            outline: none;
+                            border-radius: 10px;
+                            width: 30%;
+                            color: $flatFFF;
+                            @media (max-width: 767px) {
+                                width: 100%;
+                            }
+                            &:hover{
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-info-parent{
+        .contact-info-content{
+            padding: 50px 0 50px 30px;
+            @media (max-width: 767px) {
+                padding-left: 0;
+            }
+            div{
+                margin-bottom: 30px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+                h3{
+                    font-weight: 200;
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+                span{
+                    display: block;
+                    @media (max-width: 767px) {
+                        font-size: 10px;
+                    }
+                    &.mail{
+                        color: $defaultColor;
+                    }
+                }
+            }
+        }
+    }
+}
+.images{
+    .image-parent{
+        display: flex;
+        padding: 0;
+        .image-loc{
+            width: 12.5%;
+            position: relative;
+            div{
+                position: absolute;
+                top: 10%;
+                left: 6%;
+                width: 87%;
+                height: 83%;
+                border: 1px solid #FFF;
+                display: none;
+            }
+            &:hover{
+                div{
+                    display: block;
+                }
+            }
+        }
+    }
+}

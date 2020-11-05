@@ -1,0 +1,1 @@
+$(function(){"use strict";$(window).on("scroll",function(){$(window).scrollTop()>37?($(".navbar").addClass("navbar-fixed"),$(".navbar").hasClass("navbar-fixed")&&$(".navbar").removeClass("navbar-contact")):$(".navbar").removeClass("navbar-fixed").addClass("navbar-contact")})});

@@ -1,0 +1,106 @@
+.blog{
+    background-color: #F7F7F7;
+    padding: 80px 10px 70px;
+    @media (max-width: 767px) {
+        padding: 40px 0;
+        text-align: center;
+    }
+    h2{
+        font-weight: bold;
+        font-size: $font-size + 35;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+    .first-span{
+        display: block;
+        margin-bottom: $margin + 40;
+        color: $defaultColor;
+        @media (max-width: 767px) {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    }
+    .blog-parent{
+        @media (max-width: 1199px) {
+            margin-bottom: $margin + 10;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+        .blog-info{
+            display: flex;
+            align-items: center;
+            @media (max-width: 767px) {
+                display: block;
+            }
+            img{
+                display: inline-block;
+                margin-right: $margin + 10;
+                @media (max-width: 767px) {
+                    margin-right: 0;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .blog-info-text{
+                padding: 30px 15px 10px 0;
+                @media (max-width: 767px) {
+                    padding: 10px 0;;
+                }
+                h3{
+                    font-size: $font-size + 11;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    @media (max-width: 767px) {
+                        font-size: 16px;
+                    }
+                    a{
+                        color: #000;
+                        transition: $defaultTrans;
+                        &:hover{
+                            color: $defaultColor;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                span{
+                    font-size: $font-size + 2;
+                    color: $flatab;
+                    a{
+                        color: #000;
+                        font-weight: bold;
+                        &:hover{
+                            color: #000;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                p{
+                    font-size: $font-size + 3;
+                    margin-top: $margin;
+                    color: #777;
+                    line-height: 1.8;
+                }
+            }
+        }
+    }
+    .button-text{
+        margin-top: $margin + 20;
+        @media (max-width: 767px) {
+            margin-top: 15px;
+        }
+        button{
+            @media (max-width: 767px) {
+                padding: 10px 20px;
+            }
+            a{
+                color: $flatFFF;
+                &:hover{
+                    text-decoration: none;
+                    color: $flatFFF;
+                }
+            }
+        }
+    }
+}

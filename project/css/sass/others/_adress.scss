@@ -1,0 +1,88 @@
+.address{
+    .address-parent{
+        padding: 0;
+        line-height: 0;
+        .address-iframe{
+            iframe{
+                width: 100%;
+                border: none;
+                outline: none;
+                height: 400px;
+            }
+        }
+    }
+    .location-parent{
+        background-color: #EEE;
+        .location-info{
+            padding-top: $padding + 40;
+            padding-left: $padding + 30;
+            width: 100%;
+            @media (max-width: 767px) {
+                padding-left: 0;
+            }
+            .block-location{
+                width: 100%;
+                div{
+                    width: 100%;
+                    margin-bottom: 30px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    h5{
+                        margin-bottom: $margin + 5;
+                        font-size: $font-size + 14;
+                        font-weight: 300;
+                        @media (max-width: 767px) {
+                            margin-bottom: 10px;
+                            font-size: 19px;
+                        }
+                    }
+                    span{
+                        display: block;
+                        color: $flatab;
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        }
+                        &.last{
+                            color: $defaultColor;
+                            @media (max-width: 767px) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.book-now{
+    background-image: $linear1;
+    padding: $padding + 10;
+    @media (max-width: 767px) {
+        padding: 10px 0;
+    }
+    .book-now-parent{
+        .info-book-now{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                color: $flatFFF;
+                font-size: $font-size + 17;
+                margin: 0;
+            }
+            button{
+                background-color: #1db4c1;
+                border-radius: 20px;
+                padding: 10px 30px;
+                &:hover{
+                    background-color: #36aeb9;
+                }
+                a{
+                    text-decoration: none;
+                    color: $flatFFF;
+                }
+            }
+        }
+    }
+}

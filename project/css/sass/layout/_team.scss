@@ -1,0 +1,144 @@
+.team{
+    background-image: url('../images/team.jpg');
+    position: relative;
+    background-size: cover;
+    padding: 80px 50px 70px;
+    margin-top: $margin + 90;
+    color: $flatFFF;
+    @media (max-width: 767px) {
+        padding: 30px 0;
+        margin-top: 40px;
+    }
+    p{
+        color: $flatFFF;
+    }
+    .overlay{
+        @extend %overlay;
+        background-image: $linear1;
+    }
+    .team-text-container{
+        margin-bottom: $margin + 50;
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        h2{
+            font-weight: bold;
+            font-size: $font-size + 35;
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+    }
+    .team-info-parent{
+        margin-bottom: $margin + 10;
+        .team-info{
+            background-color: rgba(255, 255, 255, .2);
+            padding: 40px 60px;
+            transition: $defaultTrans;
+            @media (max-width: 767px) {
+                padding: 20px 20px;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+            .img-container{
+                margin-bottom: $margin + 10;
+            }
+            .info-container{
+                margin-top: $margin + 10;
+                h4{
+                    margin: 0;
+                    font-size: $font-size + 12;
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+                span{
+                    display: block;
+                    margin-bottom: $margin + 10;
+                    color: #2b97a8;
+                    @media (max-width: 767px) {
+                        font-size: 10px;
+                    }
+                }
+                p{
+                    font-size: $font-size + 4;
+                    margin-bottom: $margin + 15;
+                    @media (max-width: 767px) {
+                        font-size: 12px;
+                        margin-bottom: 0;
+                    }
+                }
+                i{
+                    margin: $margin;
+                    cursor: pointer;
+                    transition: $defaultTrans;
+                    @media (max-width: 767px) {
+                        margin: 10px 5px;
+                        font-size: 13px;
+                    }
+                    &:hover{
+                        color: #2b97a8;
+                    }
+                }
+            }
+        }
+    }
+}
+.team-down{
+    padding: 90px 40px 50px;
+    @media (max-width: 767px) {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .team-down-img{
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+    .team-down-info-container{
+        display: flex;
+        align-items: center;
+        .team-down-info{
+            width: 100%;
+            h4{
+                margin-bottom: 20px;
+                font-weight: lighter;
+                font-size: $font-size + 18;
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+            }
+            p{
+                @media (max-width: 767px) {
+                    font-size: 13px;
+                }
+            }
+            button{
+                margin-top: 30px;
+                display: inline-block !important;
+                a{
+                    text-decoration: none;
+                    color: $flatFFF;
+                }
+                @media (max-width: 767px) {
+                    margin-top: 10px;
+                    font-size: 10px;
+                    padding: 10px 20px;
+                }
+                &:last-child{
+                    margin-left: 10px;
+                    color: $defaultColor;
+                    border: none;
+                    @media (max-width: 767px) {
+                        margin-left: 0;
+                    }
+                    &:hover{
+                        background-image: $linear1;
+                        color: $flatFFF;
+                    }
+                }
+            }
+        }
+    }
+}

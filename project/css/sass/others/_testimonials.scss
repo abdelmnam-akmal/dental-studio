@@ -1,0 +1,122 @@
+.testi{
+    margin-top: $margin + 60;
+    padding: 20px 50px;
+    @media (max-width: 767px) {
+        padding: 0;
+        margin-top: 20px;
+    }
+    h2{
+        margin-bottom: $margin + 50;
+        font-size: $font-size + 35;
+        font-weight: bold;
+        @media (max-width: 767px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    .testi-info-parent{
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        &:nth-child(5),
+        &:last-child{
+            margin-top: $margin + 30;
+        }
+        &:nth-child(5){
+            @media (max-width: 767px) {
+                margin-top: 0;
+            }
+        }
+        &:last-child{
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+        .testi-info{
+            @media (max-width: 767px) {
+                height: 100%;
+            }
+            .text-testi{
+                background-image: $linear2;
+                padding: 30px 35px 10px;
+                font-size: $font-size + 3;
+                border-radius: 10px;
+                margin-bottom: $margin + 20;
+                position: relative;
+                @media (max-width: 767px) {
+                    padding: 20px 0 10px 10px;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: -20px;
+                    left: 20px;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: $flatColor2 transparent transparent transparent;
+                }
+                p{
+                    color: $flatFFF;
+                }
+            }
+            .container-img-info{
+                @media (max-width: 767px) {
+                    display: flex;
+                    align-items: center;
+                }
+                .img{
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    margin-right: $margin;
+                }
+                .info-img{
+                    display: inline-block;
+                    .div-info-name{
+                        position: relative;
+                        top: 13px;
+                        @media (max-width: 767px) {
+                            position: static;
+                            top: 0;
+                        }
+                        h6{
+                            margin: 0;
+                            @media (max-width: 767px) {
+                                font-size: 12px;
+                            }
+                        }
+                        span{
+                            color: $flatab;
+                            @media (max-width: 767px) {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .under-testi{
+        margin-top: $margin + 50 !important;
+        margin-bottom: $margin + 10 !important;
+        p{
+            @media (max-width: 767px) {
+                font-size: 12px;
+            }
+        }
+        i{
+            margin: $margin + 5;
+            color: $flatab;
+            cursor: pointer;
+            transition: $defaultTrans;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                margin: 10px;
+            }
+            &:hover{
+                color: $flat444;
+            }
+        }
+    }
+}

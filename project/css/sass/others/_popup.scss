@@ -1,0 +1,60 @@
+.popup-gallary{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, .7);
+    z-index: 9999999999;
+    display: none;
+    .intro-popup{
+        position: fixed;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: $padding + 30;
+        padding-left: $padding + 30;
+        .popup-img-container{
+            position: relative;
+            .fa-times{
+                position: absolute;
+                top: -60px;
+                right: 5px;
+                padding: 10px;
+                color: $flatFFF;
+                font-size: $font-size + 30;
+                cursor: pointer;
+                @media (max-width: 767px) {
+                    font-size: 25px;
+                    top: -44px;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .chevrones{
+        .fa-chevron-left,
+        .fa-chevron-right{
+            position: fixed;
+            top: 50%;
+            padding: 10px;
+            font-size: 40px;
+            color: #fff;
+            margin-top: -30px;
+            @media (max-width: 767px) {
+                font-size: 25px;
+                margin-top: -20.5px;
+            }
+            cursor: pointer;
+            &.fa-chevron-right{
+                right: 5px;
+            }
+            &.fa-chevron-left{
+                left: 5px;
+            }
+        }
+    }
+}

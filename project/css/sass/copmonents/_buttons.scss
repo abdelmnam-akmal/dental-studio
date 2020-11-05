@@ -1,0 +1,36 @@
+.btn-all{
+    padding: 12px 35px;
+    outline: none;
+    border-radius: 20px;
+    transition: $defaultTrans;
+    font-size: $font-size + 3;
+}
+.btn-special{
+    border: none;
+    color: $flatFFF;
+    background-image: $linear1;
+    &:hover{
+        color: $flatFFF;
+        background-image: $linear2;
+    }
+}
+.button-scroll{
+    position: fixed;
+    right: 10px;
+    bottom: -40px;
+    background-color: #1DB4C1;
+    width: 30px;
+    height: 30px;
+    z-index: 99999999999999;
+    line-height: 35px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: $defaultTrans;
+    &:hover{
+        background-color: #3397D4;
+    }
+    i{
+        font-size: $font-size + 15;
+        color: $flatFFF;
+    }
+}
